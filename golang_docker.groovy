@@ -1,6 +1,7 @@
 def gitUrl = 'https://github.com/nightdesoul/golang_example'
 
 job('Golang Docker example'){
+    label("builder")
     scm{
         git(gitUrl)
     }
