@@ -8,7 +8,7 @@ job('Golang Docker example'){
         scm('H/5 * * * *')
     }
     wrappers{
-        go('golang')
+        golang('golang')
     }
     steps{
         shell("go test")
