@@ -9,9 +9,6 @@ job('Golang Docker example'){
         scm('H/5 * * * *')
     }
     wrappers{
-        timeout {
-            absolute(60)
-        }
         golang('golang')
     }
     steps{
